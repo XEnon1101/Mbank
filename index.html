@@ -1,46 +1,141 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M bank Header</title>
-  <link rel="stylesheet" href="qwerty.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stime</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="ic_m_large.png" alt="M bank logo"> 
-    </div>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    
+    <header class="bg-white shadow-md sticky">
+        <div class="h-[65px] flex justify-between items-center ml-20">
+            <div class="flex items-center">
+                <i class="fas fa-store text-blue-500 text-2xl "></i>
+                <h1 class="text-2xl font-bold text-gray-800">Stime</h1>
+            </div>
+        </div>
+    </header>
 
-    <nav>
-      <a href="#">Танд</a>
-      <a href="#">Таны бизнест</a>
-      <a href="#">Бид</a>
-    </nav>
-
-    <div class="right">
-      <a href="#" class="help">M туслах</a>
-      <hr style="height: 20px;">
-      <button class="btn-login">Нэвтрэх</button>
-    </div>
-  </header>
-
-  <main style="height:400%;">
-      <div class="img1">
-        <img src="siudfhg.png" alt="">
-      </div>
-      <div class="img2">
-        <img src="Screenshot 2025-09-07 195548.png" alt="">
-      </div>
-      <div class="img3">
-        <img src="img3d.png" alt="">
-      </div>
-      <div class="img4">
-        <img src="m-bank.mn_(pc).png" alt="">
-      </div>
-      <div class="img5">
-        <img src="m-bank.mn_(pc) (1).png" alt="">
-      </div>
-  </main>
+    <main class="flex justify-center items-center flex-grow">
+        <div class="mb-20">
+            <h2 class="text-5xl font-bold text-gray-800 flex justify-center items-center mb-10">Products</h2>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://i.ytimg.com/vi/QdBZY2fkU-0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBa0wZmLbE_tFxXawyydwyf8T6iVQ" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">GTA VI</h3>
+                        <p class="text-gray-600 text-sm mb-2 text-bold"><span class="text-black">Coming Soon.</span> May 26, 2026</p>
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold text-blue-600">$99.99</p>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded text-sm hover:bg-blue-600 transition">Pre-Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg?t=1749182199" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Black Myth: Wukong</h3>
+                        <p class="text-gray-600 text-sm mb-2"><span class="text-red-500">Out of Stock.</span> 20 Aug, 2024</p>
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold text-blue-600">$59.99</p>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded text-sm hover:bg-blue-600 transition">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/1/15/Resident_Evil_Requiem_Cover_Art.jpg" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Resident Evil Requiem</h3>
+                        <p class="text-gray-600 text-sm mb-2 text-bold"><span class="text-black">Coming Soon.</span> 27 Feb, 2026</p>
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold text-blue-600">$39.99</p>Pre-Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://cdn-ext.fanatical.com/production/product/1280x720/42e44547-be96-45ba-aed8-7204af58f12c.jpeg" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Assetto Corsa</h3>
+                        <p class="text-gray-600 text-sm mb-2"><span class="text-green-500">In Stock.</span> 19 Dec, 2014</p>
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold text-blue-600">$19.99</p>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded text-sm hover:bg-blue-600 transition">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1181550/1db1597bef80bc9b1d67378d29b2475aed1f100c/capsule_616x353.jpg?t=1757590195" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Carnival Hunt</h3>
+                        <p class="text-gray-600 text-sm mb-2 text-bold"><span class="text-black">Coming Soon.</span> ???</p>
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold text-blue-600">$9.99</p>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded text-sm hover:bg-blue-600 transition">Pre-Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Outlast2.jpg" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Outlast II</h3>
+                        <p class="text-gray-600 text-sm mb-2"><span class="text-green-500">In Stock.</span> 25 Apr, 2017</p>
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold text-blue-600">$19.99</p>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded text-sm hover:bg-blue-600 transition">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://external-preview.redd.it/CTpyZ8F6K8x2G6leXWJYAKUQd6vp-jQnVpKYr6Gj3uI.jpg?auto=webp&s=22510f071117a999fc326f51836a54bee7df691d" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Rust</h3>
+                        <p class="text-gray-600 text-sm mb-2"><span class="text-red-500">Out of Stock.</span> January 19, 2012</p>
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold text-blue-600">$39.99</p>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded text-sm hover:bg-blue-600 transition">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1196590/header.jpg?t=1741142800" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Resident Evil Village</h3>
+                        <p class="text-gray-600 text-sm mb-2"><span class="text-green-500">In Stock.</span> 7 May, 2021</p>
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold text-blue-600">$39.99</p>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded text-sm hover:bg-blue-600 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

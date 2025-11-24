@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-stone-200 flex justify-center items-center">
+        <div class="w-[500px] h-[530px] bg-white rounded-lg shadow-lg">
+            <div class="w-full h-[30%] flex flex-col justify-center items-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYQe7sk8paP8GwcE7D6iEMSmj82HEVN8lZg&s" class="rounded-full w-20 h-20 mt-3" alt="">
+                <p class="font-bold text-3xl mt-4">Todo List</p>
+            </div>
+            <div class="w-full h-[20%] flex flex-col justify-center items-center gap-2">
+                <input id="addInput" type="text" placeholder="Даалгавар Нэмэх" class="w-80 h-10 border border-gray-500 rounded-lg px-3">
+                <button onclick="myFunction()" class="w-20 h-10 bg-blue-700 text-white font-bold text-lg rounded-lg hover:bg-blue-800">Нэмэх</button>
+            </div>
+            <div id="TodoList" class="w-full h-[50%] flex flex-col gap-2 mt-9"></div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction(){
+            const input = document.getElementById('addInput');
+            const todoList = document.getElementById('TodoList');
+            const taskText = input.value;
+
+            if (taskText === "") {
+                alert("Даалгавраа бичнэ үү!");
+                return;
+            }
+
+            const taskDiv = document.createElement('div');
+            taskDiv.className = "flex justify-between items-center bg-stone-300 w-105 h-10 rounded-md ml-10";
+
+            const taskP = document.createElement('p');
+            taskP.textContent = taskText;
+            taskP.className = "text-lg";
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = "✖️";
+            deleteBtn.onclick = function() {
+            todoList.removeChild(taskDiv);
+            };
+       
+            taskDiv.appendChild(taskP);
+            taskDiv.appendChild(deleteBtn); 
+            todoList.appendChild(taskDiv);
+            input.value = "";
+        }
+    </script>
+</body>
+</html>
